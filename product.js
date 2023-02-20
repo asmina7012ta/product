@@ -3,7 +3,7 @@ function addProduct(){
     if(product.id in localStorage){
         alert("product already exist")
     }else{
-        alert("new employee added")
+        alert("new product added")
     }
     localStorage.setItem(product.id,JSON.stringify(product))
 }
@@ -21,7 +21,7 @@ function search(){
     }
     else{
         alert("product not found")
-        result.innerHTML=`<h1 class="text-danger">EMPLOYEE NOT FOUND</h1>`
+        result.innerHTML=`<h1 class="text-danger">PRODUCT NOT FOUND</h1>`
     }
 }
 function logout(){
